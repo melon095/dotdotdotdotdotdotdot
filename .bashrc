@@ -23,7 +23,7 @@ export EDITOR="nvim"
 export LIBVIRT_DEFAULT_URL="qemu:///system"
 # https://github.com/tauri-apps/wry/issues/1366
 export WEBKIT_DISABLE_DMABUF_RENDERER="1"
-export PATH="$PATH:/home/user/.dotnet/tools"
+export PATH="$PATH:$HOME/.dotnet/tools"
 export NVD_BACKEND=direct
 
 alias ls='/usr/bin/ls --color=auto -lah'
