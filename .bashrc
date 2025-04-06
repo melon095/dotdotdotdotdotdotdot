@@ -13,7 +13,7 @@ function set_prompt {
         EXIT_COLOR="\[\e[31m\]$EXIT"    # red
     fi
 
-    PS1="[\[\e[32m\]\u@\h\[\e[0m\]]-[$EXIT_COLOR\[\e[0m\]]-[\[\e[34m\]\W\[\e[0m\]]\n\$ "
+    PS1="[\[\e[32m\]\u@\h\[\e[0m\]]-[$EXIT_COLOR\[\e[0m\]]-[\[\e[34m\]\w\[\e[0m\]]\n\$ "
 }
 
 PROMPT_COMMAND=set_prompt
