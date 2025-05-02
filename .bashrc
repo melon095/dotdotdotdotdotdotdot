@@ -18,6 +18,8 @@ function set_prompt {
 
 PROMPT_COMMAND=set_prompt
 
+export HISTSIZE=100
+export HISTFILESIZE=100000
 export LIBVA_DRIVER_NAME="nvidia"
 export EDITOR="nvim"
 export LIBVIRT_DEFAULT_URL="qemu:///system"
@@ -28,7 +30,8 @@ export PATH="$HOME/.local/bin:$PATH"
 export NVD_BACKEND=direct
 export CHATTERINO2_RECENT_MESSAGES_URL="https://recent-messages.zneix.eu/api/v2/recent-messages/%1"
 
-alias ls='/usr/bin/ls --color=auto -lah'
+alias rm="/usr/bin/gomi"
+alias ls='/usr/bin/eza -lah --hyperlink'
 alias grep='/usr/bin/grep --color=auto'
 alias clip='/usr/bin/wl-copy'
 alias config='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
