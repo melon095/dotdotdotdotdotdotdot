@@ -31,7 +31,7 @@ export NVD_BACKEND=direct
 export CHATTERINO2_RECENT_MESSAGES_URL="https://recent-messages.zneix.eu/api/v2/recent-messages/%1"
 
 alias rm="/usr/bin/gomi"
-alias ls='/usr/bin/eza -lah --hyperlink'
+alias ls='/usr/bin/eza -lagh --hyperlink'
 alias grep='/usr/bin/grep --color=auto'
 alias clip='/usr/bin/wl-copy'
 alias config='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'

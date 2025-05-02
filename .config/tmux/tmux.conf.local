@@ -403,8 +403,8 @@ unbind ]
 unbind '"'
 unbind %
 
-bind | split-window -h
-bind - split-window -v
+#bind | split-window -h
+#bind - split-window -v
 bind -n M-Left select-pane -L
 bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
@@ -419,8 +419,21 @@ bind -n M-7 select-window -t 7
 bind -n M-8 select-window -t 8
 bind -n M-9 select-window -t 9
 
+## tmux-ssh-split keybinds
+set-option -g @ssh-split-keep-cwd "true"
+set-option -g @ssh-split-keep-remote-cwd "true"
+set-option -g @ssh-split-fail "false"
+set-option -g @ssh-split-no-env "false"
+set-option -g @ssh-split-no-shell "false"
+set-option -g @ssh-split-strip-cmd "true"
+set-option -g @ssh-split-verbose "true"
+set-option -g @ssh-split-debug "false"
+set-option -g @ssh-split-h-key "|"
+set-option -g @ssh-split-v-key "-"
+
 set -g @plugin 'jaclu/tmux-menus'
 set -g @plugin 'tmux-plugins/tmux-cpu'
+set -g @plugin 'pschmitt/tmux-ssh-split'
 
 set -g @menus_trigger 'Space'
 
