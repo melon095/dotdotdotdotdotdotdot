@@ -38,6 +38,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 alias lazyconfig='/usr/bin/lazygit --git-dir=$HOME/.dot/ --work-tree=$HOME'
 alias c='cd /mnt/d/code/'
 
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+
 if [ -f "$HOME/.cargo/env" ]; then
 	. "$HOME/.cargo/env"
 fi
